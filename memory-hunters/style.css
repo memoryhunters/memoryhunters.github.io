@@ -1,0 +1,90 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background-color: #222;
+}
+
+a, a:hover, a:visited {
+  color: #EEE;
+  text-decoration: none;
+}
+
+.jumbotron {
+  align-items: center;
+  background: url(assets/world-map.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.jumbotron > * {
+  z-index: 1;
+}
+
+.jumbotron::before {
+  background-color: #0009;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.actions {
+  align-items: center;
+  display: flex;
+  margin-top: 30px;
+}
+
+.download-btn {
+  align-items: center;
+  background-color: #ff3c00;
+  border-radius: 10px;
+  color: white;
+  display: inline-flex;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 26px;
+  height: 70px;
+  padding: 0 25px;
+  transition: all 0.7s;
+}
+
+.download-btn:hover {
+  background-color: #656565;
+  transform: scale(1.05);
+}
+
+.download-icon {
+  font-size: 40px !important;
+  margin-left: 15px;
+}
+
+.logo-instagram {
+  height: 70px;
+  margin-left: 40px;
+  transition: all 1s;
+}
+
+.logo-instagram:hover {
+  transform: rotate(360deg);
+}
+
+iframe {
+  height: 450px;
+  margin-top: 50px;
+  max-width: 100%;
+  width: 800px;
+}
