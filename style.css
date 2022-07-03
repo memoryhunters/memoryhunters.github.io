@@ -7,6 +7,8 @@ body {
 
 body {
   background-color: #222;
+  color: white;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
 }
 
 a, a:hover, a:visited {
@@ -30,7 +32,7 @@ a, a:hover, a:visited {
 }
 
 .jumbotron::before {
-  background-color: #0009;
+  background-color: #0006;
   content: '';
   height: 100%;
   left: 0;
@@ -49,16 +51,32 @@ a, a:hover, a:visited {
   margin-top: 30px;
 }
 
+.date {
+  align-items: center;
+  display: flex;
+  font-size: 36px;
+}
+
+.date-icon {
+  margin-right: 15px;
+  font-size: 50px !important;
+}
+
+.demo-icon {
+  margin-left: 10px;
+  font-size: 50px !important;
+}
+
 .download-btn {
   align-items: center;
   background-color: #ff3c00;
   border-radius: 10px;
   color: white;
   display: inline-flex;
-  font-family: 'Courier New', Courier, monospace, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   height: 70px;
-  padding: 0 25px;
+  margin-left: 70px;
+  padding: 0 20px;
   transition: all 0.7s;
 }
 
@@ -68,13 +86,13 @@ a, a:hover, a:visited {
 }
 
 .download-icon {
-  font-size: 40px !important;
+  height: 38px;
   margin-left: 15px;
 }
 
 .logo-instagram {
   height: 70px;
-  margin-left: 40px;
+  margin-left: 70px;
   transition: all 1s;
 }
 
@@ -82,9 +100,55 @@ a, a:hover, a:visited {
   transform: rotate(360deg);
 }
 
-iframe {
-  height: 450px;
+.brand {
+  align-items: center;
+  display: flex;
+  font-family: Courier, monospace, sans-serif;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.logo-deltawave {
+  height: 30px;
+  margin-right: 15px;
+}
+
+main {
   margin-top: 50px;
   max-width: 100%;
   width: 800px;
+}
+
+iframe {
+  height: 450px;
+  width: 100%;
+}
+
+blockquote {
+  align-items: flex-start;
+  display: flex;
+  margin: 50px 0 0 0 ;
+}
+
+blockquote p {
+  font-style: italic;
+  margin: 0 0 0 10px;
+}
+
+.quote-icon {
+  font-size: 70px !important;
+}
+
+.description {
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.description ul {
+  margin: 40px 0;
+}
+
+.link {
+  border-bottom: 1px solid white;
+  display: inline-block;
 }
